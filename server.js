@@ -55,7 +55,7 @@ app.post("/api/exercise/new-user", (req,res) => {
 
 app.get("/api/exercise/users", (req,res) => {
   User.find({}, (err,data) => {
-    res.json(data);
+    res.send(data);
   });
 });
 
